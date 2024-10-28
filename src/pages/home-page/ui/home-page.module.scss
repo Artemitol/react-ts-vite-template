@@ -1,0 +1,18 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.background {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100dvw;
+    height: 100dvh;
+    max-width: 100%;
+    z-index: -100;
+    background-color: var(--color-background);
+}
