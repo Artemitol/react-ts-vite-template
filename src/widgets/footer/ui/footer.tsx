@@ -1,10 +1,10 @@
-import classes from "./header.module.scss"
+import classes from "./footer.module.scss"
 
 
 export function Footer() {
     return (
-        <footer className={classes.header}>
-            <span>Hello World! This is React Ts application</span>
+        <footer className={classes.footer}>
+            <span>this is footerg</span>
         </footer>
     )
 }
