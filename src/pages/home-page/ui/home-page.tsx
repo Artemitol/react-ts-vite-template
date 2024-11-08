@@ -1,6 +1,7 @@
 import { Header } from "@widgets/header"
 import { Main } from "@widgets/main"
 import classes from "./home-page.module.scss"
+import { Footer } from "@widgets/footer"
 
 export function Homepage() {
     return (
@@ -9,7 +10,7 @@ export function Homepage() {
             <div className={classes.homepage}>
                 <Header />
                 <Main>Hello world!</Main>
-                <footer className="footer"></footer>
+                <Footer />
             </div>
         </>
     )
