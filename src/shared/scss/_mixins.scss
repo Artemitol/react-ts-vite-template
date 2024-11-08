@@ -31,10 +31,14 @@
     align-items: center;
 }
 
-@function px-to-rem($value) {
-    $result: calc($value / $font-size);
-
-    @return #{$result}rem;
+@mixin backgroung-styles {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100dvw;
+    height: 100dvh;
+    max-width: 100%;
+    z-index: -100;
+    @content
 }
-
 // TODO: add font mixins

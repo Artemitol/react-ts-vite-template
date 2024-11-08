@@ -38,9 +38,6 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
-/*
-8. Create a root stacking context
-*/
 
 ul, ol {
     padding: 0;
@@ -50,10 +47,10 @@ ul, ol {
     isolation: isolate;
 }
 
+// Svg will react on parrent color
 svg *[fill] {
     fill: currentColor;
 }
-
 svg *[stroke] {
     stroke: currentColor;
 }
