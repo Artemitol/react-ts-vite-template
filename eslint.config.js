@@ -6,25 +6,29 @@ import pluginReact from "eslint-plugin-react"
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
-  {
-    languageOptions: {
-      globals: globals.browser,
-      parser: '@typescript-eslint/parser',
-      parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: 'module',
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-    rules: {
-      semi: ["error", "never"],
-      "react/react-in-jsx-scope": "off",
-    },
-  },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+  {
+    plugins: {
+      'react': pluginReact,
+    },
+    rules: {
+      'react/jsx-uses-react': 'off',
+      'react/react-in-jsx-scope': 'off',
+      semi: ["error", "never"],
+    },
+    settings: {
+      settings: {
+        "import/resolver": {
+          typescript: true,
+        },
+        react: {
+          version: "detect",
+        },
+      },
+    },
+    ignores: ["node_modules/*", "dist/*"]
+  },
 ]
