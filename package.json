@@ -8,7 +8,8 @@
         "dev": "vite",
         "build": "vite build",
         "lint": "npx eslint .",
-        "lint:format": "npx eslint src --fix"
+        "lint:auto-fix": "npx eslint src --fix",
+        "lint:format": "npx prettier . --write"
     },
     "dependencies": {
         "axios": "^1.7.7",
