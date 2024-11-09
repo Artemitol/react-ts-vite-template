@@ -1,4 +1,3 @@
-import { Header } from "@widgets/header"
 import classes from "./main.module.scss"
 
 interface Props {
@@ -6,10 +5,5 @@ interface Props {
 }
 
 export function Main(props: Props) {
-    return (
-        <div className={classes.main}>
-            {props.children}
-            <Header></Header>
-        </div>
-    )
+    return <div className={classes.main}>{props.children}</div>
 }
