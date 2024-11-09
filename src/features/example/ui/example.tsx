@@ -1,6 +1,6 @@
 export function Example1() {
     return (
-        <div className="">
+        <div className=''>
             <span>Example</span>
         </div>
     )

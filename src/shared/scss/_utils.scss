@@ -1,17 +1,17 @@
 @use "@scss/_mixins";
 
-.hidden { 
+.hidden {
     @include hidden;
 }
 
 .hidden-mobile {
     @include mobile {
-        @include hidden
+        @include hidden;
     }
 }
 
 .hidden-tablet {
     @include tablet {
-        @include hidden
+        @include hidden;
     }
 }

@@ -39,6 +39,6 @@
     height: 100dvh;
     max-width: 100%;
     z-index: -100;
-    @content
+    @content;
 }
 // TODO: add font mixins

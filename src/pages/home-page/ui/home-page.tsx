@@ -1,8 +1,7 @@
 import { Header } from "@widgets/header"
 import { Main } from "@widgets/main"
-import classes from "./home-page.module.scss"
 import { Footer } from "@widgets/footer"
-
+import classes from "./home-page.module.scss"
 
 export function Homepage() {
     return (
