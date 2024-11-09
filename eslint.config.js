@@ -1,16 +1,29 @@
 /* eslint-disable import/no-default-export */
+import { FlatCompat } from "@eslint/eslintrc"
+import path from "path"
+import { fileURLToPath } from "url"
 import pluginJs from "@eslint/js"
 import tseslint from "typescript-eslint"
 import pluginReact from "eslint-plugin-react"
-import importPlugin from "eslint-plugin-import"
 import eslintConfigPrettier from "eslint-config-prettier"
 import eslintPluginPrettier from "eslint-plugin-prettier"
+import featureSliced from "@conarti/eslint-plugin-feature-sliced"
+import importPlugin from "eslint-plugin-import"
+
+// All code below is to make .eslintrc configs flat
+// ------------------------------------------------------------
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+const compat = new FlatCompat({
+    baseDirectory: __dirname,
+})
+// ------------------------------------------------------------
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
     pluginJs.configs.recommended,
     ...tseslint.configs.recommended,
-    importPlugin.flatConfigs.recommended,
     eslintConfigPrettier,
     pluginReact.configs.flat.recommended,
     { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
@@ -18,6 +31,8 @@ export default [
         plugins: {
             react: pluginReact,
             prettier: eslintPluginPrettier,
+            featureSliced: featureSliced,
+            import: importPlugin
         },
         rules: {
             "react/jsx-uses-react": "off",
@@ -26,6 +41,9 @@ export default [
             "import/no-default-export": "error",
             "import/no-unresolved": "off",
             "prettier/prettier": "error",
+            "featureSliced/layers-slices": "error",
+            "featureSliced/absolute-relative": "error",
+            "featureSliced/public-api": "error"
         },
         settings: {
             settings: {
