@@ -1,8 +1,21 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React + ts working in Vite with ESLint + Prettirt rules.
 
-Currently, two official plugins are available:
+## Technologies list
+Here is list of all technologies used in project:
+1. React
+2. Vite
+3. Typescript
+4. SCSS modules
+5. Eslint
+6. Prettier
+7. Feature-Sliced-Design (FSD) metodology
+8. Node / npm 
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+scripts(`npm run ...`) :
+- `...dev` - run local server, to preview project
+- `...build` - creates build in `dist` directory
+- `...lint` - shows all problems in project using eslint
+- `...lint:auto-fix` - eslint will fix all problems that can be fixed automatically
+- `...lint:format` - prettier will reformat all files in project
