@@ -3,6 +3,7 @@ import { Main } from "@widgets/main"
 import classes from "./home-page.module.scss"
 import { Footer } from "@widgets/footer"
 
+
 export function Homepage() {
     return (
         <>

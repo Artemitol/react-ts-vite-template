@@ -4,7 +4,7 @@ interface Props {
     children?: React.ReactNode
 }
 
-export default function Main(props: Props) {
+export function Main(props: Props) {
     return (
         <div className={classes.main}>
             {props.children}
