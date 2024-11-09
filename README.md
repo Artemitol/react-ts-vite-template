@@ -13,6 +13,11 @@ Here is list of all technologies used in project:
 7. Feature-Sliced-Design (FSD) metodology
 8. Node / npm 
 
+## IDE requirements
+1. ESLint plugin
+2. Prettier plugin
+
+## NODE scripts
 scripts(`npm run ...`) :
 - `...dev` - run local server, to preview project
 - `...build` - creates build in `dist` directory
