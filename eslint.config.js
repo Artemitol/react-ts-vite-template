@@ -9,6 +9,7 @@ import eslintConfigPrettier from "eslint-config-prettier"
 import eslintPluginPrettier from "eslint-plugin-prettier"
 import featureSliced from "@conarti/eslint-plugin-feature-sliced"
 import importPlugin from "eslint-plugin-import"
+import cssPlugin from "eslint-plugin-css"
 
 // All code below is to make .eslintrc configs flat
 // ------------------------------------------------------------
@@ -33,6 +34,7 @@ export default [
             prettier: eslintPluginPrettier,
             featureSliced: featureSliced,
             import: importPlugin,
+            cssPlugin: cssPlugin,
         },
         rules: {
             "react/jsx-uses-react": "off",
@@ -41,6 +43,7 @@ export default [
             "import/no-default-export": "error",
             "import/no-unresolved": "off",
             "prettier/prettier": "error",
+            "cssPlugin/no-dupe-properties": "error",
             "featureSliced/layers-slices": [
                 "error",
                 {
