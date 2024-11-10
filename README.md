@@ -1,6 +1,6 @@
 # React + Vite
 
-This template my own template that provides a minimal setup to get React + ts working in Vite with ESLint + Prettirt rules.
+This is my own template which provides a minimal setup to get React + ts working in Vite with ESLint + Prettier rules.
 
 ## Technologies list
 Here is list of all technologies used in project:
