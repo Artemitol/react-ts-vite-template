@@ -7,13 +7,14 @@ This is my own template which provides a minimal setup to get React + ts working
 Here is list of all technologies used in project:
 
 1. React
-2. Vite
-3. Typescript
-4. SCSS modules
-5. Eslint
-6. Prettier
-7. Feature-Sliced-Design (FSD) metodology
-8. Node / npm
+2. Redux
+3. Vite
+4. Typescript
+5. SCSS modules
+6. Eslint
+7. Prettier
+8. Feature-Sliced-Design (FSD) metodology
+9. Node / npm
 
 ## IDE requirements
 
