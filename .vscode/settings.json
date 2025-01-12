@@ -1,7 +1,0 @@
-{
-    "prettier.enable": true,
-    "prettier.useEditorConfig": true,
-    "eslint.enable": false,
-    "eslint.onIgnoredFiles": "off",
-    "eslint.useFlatConfig": true,
-}

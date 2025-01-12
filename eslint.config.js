@@ -42,7 +42,7 @@ export default [
             semi: ["error", "never"],
             "import/no-default-export": "error",
             "import/no-unresolved": "off",
-            "prettier/prettier": "error",
+            "prettier/prettier": "warn",
             "cssPlugin/no-dupe-properties": "error",
             "featureSliced/layers-slices": [
                 "error",
